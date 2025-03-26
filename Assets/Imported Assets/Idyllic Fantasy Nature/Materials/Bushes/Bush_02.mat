@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1282722538307023351
+--- !u!114 &-8970608212819808399
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bush_03
+  m_Name: Bush_02
   m_Shader: {fileID: -6465566751694194690, guid: 3230f6c5d09dd114c82b2287fcc7e15b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -34,7 +34,7 @@ Material:
   - _CAST_SHADOWS_OFF
   - _OVERLAY_B
   - _OVERLAY_UV
-  - _WIND_OVERLAY_VERTEX_POSITION
+  - _WIND_OVERLAY_UV
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -92,7 +92,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: c5c09bd3623ab144faaf0c53b45eca91, type: 3}
+        m_Texture: {fileID: 2800000, guid: 856e6064f1df76a4196aea0e8b697cf4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -112,16 +112,16 @@ Material:
     - _AlphaClip: 1
     - _AlphaCutoff: 0.5
     - _AlphaToMask: 1
-    - _Alpha_Cutoff: 0.3
+    - _Alpha_Cutoff: 0.6
     - _BEND_WIND_OVERLAY: 0
     - _BOOLEAN_1: 0
     - _Bend: 0
     - _Bend_Range: 1
-    - _Bend_Strength: 0.7
+    - _Bend_Strength: 0.245
     - _Blend: 0
-    - _BlendHeight: 0.62
+    - _BlendHeight: 1.44
     - _BlendModePreserveSpecular: 0
-    - _Blend_Height: 0.144
+    - _Blend_Height: 0
     - _BumpScale: 1
     - _CAST_SHADOWS: 1
     - _CAST_SHADOWS_OFF: 1
@@ -130,13 +130,13 @@ Material:
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 0
-    - _CustomColor: 1
+    - _CustomColor: 0
     - _Custom_Color: 1
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Enable_Top_Color: 1
+    - _Enable_Top_Color: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -158,35 +158,35 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Start_Bend_Range: 0.4
+    - _Start_Bend_Range: 0.508
     - _Start_To_Bend_Range: 1
     - _Start_to_bend_range: 1
     - _Surface: 0
     - _Value: 0
-    - _WIND_OVERLAY: 0
-    - _Wave_Scale: 0.5
+    - _WIND_OVERLAY: 1
+    - _Wave_Scale: 1
     - _WindDensity: 0
     - _WindSpeed: 0.5
     - _WindSpeed2: 0
-    - _WindStrength: 0
+    - _WindStrength: 0.5
     - _Wind_Direction: 0
-    - _Wind_Speed: 0.14
-    - _Wind_Strength: 0.25
-    - _Wind_Variation: 1
+    - _Wind_Speed: 2.4
+    - _Wind_Strength: 0.2
+    - _Wind_Variation: 0
     - _WorkflowMode: 0
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColor: {r: 0.22831331, g: 0.4433962, b: 0, a: 0}
-    - _Bottom_Color: {r: 0.3697115, g: 0.5188679, b: 0, a: 0}
+    - _BottomColor: {r: 0.6313726, g: 0.6208051, b: 0, a: 0}
+    - _Bottom_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Player_Position: {r: 169.991, g: 19.89849, b: 166.09459, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _TopColor: {r: 1, g: 0.11503085, b: 0.0047169924, a: 0}
-    - _Top_Color: {r: 1, g: 0.23113209, b: 0.34910646, a: 0}
+    - _TopColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 0}
+    - _Top_Color: {r: 1, g: 1, b: 1, a: 0}
     - _WindDirection: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Wind_Direction: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
