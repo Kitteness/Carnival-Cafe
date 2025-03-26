@@ -15,15 +15,25 @@ public class SocketChecking : MonoBehaviour
 
     public void socketCheck(string tag)
     {
+        IXRSelectInteractable interactable = null;
 
-        IXRSelectInteractable interactable = socket.GetOldestInteractableSelected();
-
-        Debug.Log(interactable.transform.name + " in socket of " + socket.transform.name);
-
-        if (interactable.transform.gameObject.tag == tag)
+        if (socket.hasSelection)
         {
-            correctPanel.SetActive(true);
-            orderPanel.SetActive(false);
+            interactable = socket.GetOldestInteractableSelected();
+        }
+
+        if (interactable != null)
+        {
+            if (interactable.transform.gameObject.tag == tag)
+            {
+                correctPanel.SetActive(true);
+                orderPanel.SetActive(false);
+            }
+            else
+            {
+                incorrectPanel.SetActive(true);
+                orderPanel.SetActive(false);
+            }
         }
         else
         {

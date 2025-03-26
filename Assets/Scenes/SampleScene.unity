@@ -316,8 +316,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: StellarWitch
       objectReference: {fileID: 0}
+    - target: {fileID: 5953291791835662447, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 54a83325115ce584ea067268c4a12301, type: 2}
     m_RemovedComponents:
     - {fileID: 675033666522358969, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 6196120363567057494, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 1093023806514227351, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 1028118622018433382, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 6896543907251824535, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 5419396521285958261, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 5768656214266308132, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 3671149753546041789, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 1602944941182671699, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 4938843759321024536, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 2953411108160414687, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+    - {fileID: 8077526873719649474, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5979,7 +5994,7 @@ GameObject:
   - component: {fileID: 2469531030036181603}
   m_Layer: 0
   m_Name: Coffee_cup
-  m_TagString: Untagged
+  m_TagString: Coffee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
