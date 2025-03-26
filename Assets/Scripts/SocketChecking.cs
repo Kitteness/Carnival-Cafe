@@ -12,6 +12,7 @@ public class SocketChecking : MonoBehaviour
     [SerializeField] private GameObject correctPanel;
     [SerializeField] private GameObject incorrectPanel;
     [SerializeField] private GameObject orderPanel;
+    [SerializeField] private GameObject noItemPanel;
 
     public void socketCheck(string tag)
     {
@@ -37,7 +38,7 @@ public class SocketChecking : MonoBehaviour
         }
         else
         {
-            incorrectPanel.SetActive(true);
+            noItemPanel.SetActive(true);
             orderPanel.SetActive(false);
         }
     }
