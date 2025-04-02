@@ -13,6 +13,16 @@ public class SocketChecking : MonoBehaviour
     [SerializeField] private GameObject incorrectPanel;
     [SerializeField] private GameObject orderPanel;
     [SerializeField] private GameObject noItemPanel;
+    public GameObject audioTarget;
+    private AudioSource targetAudioSource;
+    public AudioClip correctSound;
+    public AudioClip incorrectSound;
+
+
+    public void Start()
+    {
+        targetAudioSource = audioTarget.GetComponent<AudioSource>();
+    }
 
     public void socketCheck(string tag)
     {
@@ -29,17 +39,20 @@ public class SocketChecking : MonoBehaviour
             {
                 correctPanel.SetActive(true);
                 orderPanel.SetActive(false);
+                targetAudioSource.PlayOneShot(correctSound);
             }
             else
             {
                 incorrectPanel.SetActive(true);
                 orderPanel.SetActive(false);
+                targetAudioSource.PlayOneShot(incorrectSound);
             }
         }
         else
         {
             noItemPanel.SetActive(true);
             orderPanel.SetActive(false);
+            targetAudioSource.PlayOneShot(incorrectSound);
         }
     }
 }
