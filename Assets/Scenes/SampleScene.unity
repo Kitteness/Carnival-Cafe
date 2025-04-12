@@ -7382,7 +7382,7 @@ GameObject:
   - component: {fileID: 2571981859604163934}
   m_Layer: 0
   m_Name: Waypoint 2
-  m_TagString: Untagged
+  m_TagString: Waypoint 2
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10767,7 +10767,7 @@ GameObject:
   - component: {fileID: 2512970342191189246}
   m_Layer: 0
   m_Name: Waypoint 1
-  m_TagString: Waypoint 2
+  m_TagString: Waypoint 1
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
