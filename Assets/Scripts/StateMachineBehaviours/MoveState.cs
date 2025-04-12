@@ -21,7 +21,7 @@ public class MoveState :StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 
-        if (Vector3.Distance(animator.transform.position, target) > 1)
+        if (Vector3.Distance(animator.transform.position, target) < 1)
         {
             animator.SetBool("Order", true);
         }
