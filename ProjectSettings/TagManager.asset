@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Anchor
   - Coffee
+  - Waypoint 1
+  - Waypoint 2
   layers:
   - Default
   - TransparentFX
