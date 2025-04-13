@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using TMPro;
 
 public class CustomerManagement : MonoBehaviour
 {
@@ -12,11 +13,11 @@ public class CustomerManagement : MonoBehaviour
     [SerializeField] private GameObject incorrectPanel;
     [SerializeField] private GameObject orderPanel;
     [SerializeField] private GameObject noItemPanel;
+    [SerializeField] private TextMeshProUGUI orderText;
     public GameObject audioTarget;
     private AudioSource targetAudioSource;
     public AudioClip correctSound;
     public AudioClip incorrectSound;
-
 
     public void Start()
     {
@@ -63,6 +64,7 @@ public class CustomerManagement : MonoBehaviour
         if (customerNumber < customers.Length)
         {
             customers[customerNumber].SetActive(true);
+            orderText.text = "I'd like to order a " + tags[customerNumber] + ".";
         }
     }
 }
