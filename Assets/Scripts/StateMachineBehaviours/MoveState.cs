@@ -6,14 +6,16 @@ public class MoveState :StateMachineBehaviour
     private NavMeshAgent agent;
     private Vector3 target;
     private GameObject player;
+    private GameObject helloPanel;
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
+        helloPanel = GameObject.FindGameObjectWithTag("Hello 1");
+        helloPanel.SetActive(false);
         target = GameObject.FindGameObjectWithTag("Waypoint 1").transform.position;
-        animator.SetFloat("timeIdle", 0);
         agent.SetDestination(target);
     }
 
@@ -25,5 +27,11 @@ public class MoveState :StateMachineBehaviour
         {
             animator.SetBool("Order", true);
         }
+    }
+
+    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        helloPanel.SetActive(true);
     }
 }
