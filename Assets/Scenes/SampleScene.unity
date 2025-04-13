@@ -345,6 +345,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1095970306432993455, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
   m_PrefabInstance: {fileID: 80724534}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &80724536 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5953291791835662447, guid: 60ecb9b24bd23f041b1ca6d9f580d5fc, type: 3}
+  m_PrefabInstance: {fileID: 80724534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &123580690
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +844,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3587393115944050591, guid: afc490d5c1e0c467dbff02f08417fce4, type: 3}
   m_PrefabInstance: {fileID: 266271626}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &298192698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298192699}
+  - component: {fileID: 298192700}
+  m_Layer: 5
+  m_Name: Logic Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &298192699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298192698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4804122566142831326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &298192700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298192698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1ec6080699eae40bb8c7eb800e3a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customers:
+  - {fileID: 80724535}
+  tags:
+  - Coffee
+  socket: {fileID: 123580693}
+  correctPanel: {fileID: 6801361245348308183}
+  incorrectPanel: {fileID: 1642486056}
+  orderPanel: {fileID: 2441803015057652913}
+  noItemPanel: {fileID: 340320829}
+  audioTarget: {fileID: 0}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 0}
 --- !u!1 &340320829
 GameObject:
   m_ObjectHideFlags: 0
@@ -7247,7 +7312,6 @@ GameObject:
   - component: {fileID: 2157190473719083456}
   - component: {fileID: 979260257651331766}
   - component: {fileID: 4317677528665511583}
-  - component: {fileID: 4317677528665511584}
   m_Layer: 5
   m_Name: Order Panel
   m_TagString: Untagged
@@ -10128,6 +10192,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 80724536}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Update
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4278004873269901566
 GameObject:
   m_ObjectHideFlags: 0
@@ -10259,26 +10335,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4317677528665511584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2441803015057652913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bced960ec33d5440b0cc2c29ebd502e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  socket: {fileID: 123580693}
-  correctPanel: {fileID: 6801361245348308183}
-  incorrectPanel: {fileID: 1642486056}
-  orderPanel: {fileID: 2441803015057652913}
-  noItemPanel: {fileID: 340320829}
-  audioTarget: {fileID: 2038830784}
-  correctSound: {fileID: 8300000, guid: 0996bb5b5d491cc4d8fa7138534e8b29, type: 3}
-  incorrectSound: {fileID: 8300000, guid: dfa7ed4fa1c49ba4e95ebb5a57a1507a, type: 3}
 --- !u!1 &4328962168029962150
 GameObject:
   m_ObjectHideFlags: 0
@@ -10784,6 +10840,7 @@ RectTransform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 298192699}
   - {fileID: 449773678}
   - {fileID: 2157190473719083456}
   - {fileID: 340320830}
@@ -12828,7 +12885,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4317677528665511584}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SocketChecking, Assembly-CSharp
         m_MethodName: socketCheck
         m_Mode: 5

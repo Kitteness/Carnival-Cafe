@@ -5,14 +5,12 @@ public class MoveState :StateMachineBehaviour
 {
     private NavMeshAgent agent;
     private Vector3 target;
-    private GameObject player;
     private GameObject helloPanel;
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
         helloPanel = GameObject.FindGameObjectWithTag("Hello Panel");
         helloPanel.SetActive(false);
         target = GameObject.FindGameObjectWithTag("Waypoint 1").transform.position;
