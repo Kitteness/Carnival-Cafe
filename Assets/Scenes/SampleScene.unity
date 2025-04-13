@@ -901,9 +901,9 @@ MonoBehaviour:
   incorrectPanel: {fileID: 1642486056}
   orderPanel: {fileID: 2441803015057652913}
   noItemPanel: {fileID: 340320829}
-  audioTarget: {fileID: 0}
-  correctSound: {fileID: 0}
-  incorrectSound: {fileID: 0}
+  audioTarget: {fileID: 2038830784}
+  correctSound: {fileID: 8300000, guid: 0996bb5b5d491cc4d8fa7138534e8b29, type: 3}
+  incorrectSound: {fileID: 8300000, guid: dfa7ed4fa1c49ba4e95ebb5a57a1507a, type: 3}
 --- !u!1 &340320829
 GameObject:
   m_ObjectHideFlags: 0
