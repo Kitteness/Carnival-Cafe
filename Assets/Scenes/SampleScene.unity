@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 449773679}
   m_Layer: 5
   m_Name: 'Hello Panel '
-  m_TagString: Hello 1
+  m_TagString: Hello Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

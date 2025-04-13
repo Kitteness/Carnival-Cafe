@@ -13,7 +13,7 @@ public class MoveState :StateMachineBehaviour
     {
         agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
-        helloPanel = GameObject.FindGameObjectWithTag("Hello 1");
+        helloPanel = GameObject.FindGameObjectWithTag("Hello Panel");
         helloPanel.SetActive(false);
         target = GameObject.FindGameObjectWithTag("Waypoint 1").transform.position;
         agent.SetDestination(target);
