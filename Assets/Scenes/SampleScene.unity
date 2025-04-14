@@ -796,8 +796,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customers:
   - {fileID: 1095970306371046041}
+  - {fileID: 8600097848180489870}
   tags:
   - Coffee
+  - an ice cream
   socket: {fileID: 123580693}
   correctPanel: {fileID: 6801361245348308183}
   incorrectPanel: {fileID: 1642486056}
@@ -13260,7 +13262,7 @@ Animator:
   m_GameObject: {fileID: 8600097848180489870}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 14df923b9101bb14abca861595b99a5f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 54a83325115ce584ea067268c4a12301, type: 2}
+  m_Controller: {fileID: 9100000, guid: cf38593a5ce4b2b4aa84b27ace2280f5, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16221,7 +16223,7 @@ GameObject:
   - component: {fileID: 1837175361188198120}
   m_Layer: 0
   m_Name: ice_strawberry
-  m_TagString: Untagged
+  m_TagString: an ice cream
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18876,7 +18878,7 @@ GameObject:
   - component: {fileID: 5445862683826481542}
   m_Layer: 0
   m_Name: ice_vanilla
-  m_TagString: Untagged
+  m_TagString: an ice cream
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19180,7 +19182,7 @@ GameObject:
   - component: {fileID: 5590895267897895}
   m_Layer: 0
   m_Name: ice_soda
-  m_TagString: Untagged
+  m_TagString: an ice cream
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24308,7 +24310,7 @@ GameObject:
   - component: {fileID: 1456853333888216828}
   m_Layer: 0
   m_Name: ice_mint
-  m_TagString: Untagged
+  m_TagString: an ice cream
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
