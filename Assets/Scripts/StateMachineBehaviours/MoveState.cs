@@ -11,8 +11,7 @@ public class MoveState :StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
-        helloPanel = GameObject.FindGameObjectWithTag("Hello Panel");
-        helloPanel.SetActive(false);
+        helloPanel = GameObject.FindGameObjectWithTag("Logic Manager").GetComponent<CustomerManagement>().helloPanel;
         target = GameObject.FindGameObjectWithTag("Waypoint 1").transform.position;
         agent.SetDestination(target);
     }

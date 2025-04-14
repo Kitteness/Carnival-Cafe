@@ -14,6 +14,7 @@ public class CustomerManagement : MonoBehaviour
     [SerializeField] private GameObject orderPanel;
     [SerializeField] private GameObject noItemPanel;
     [SerializeField] private TextMeshProUGUI orderText;
+    public GameObject helloPanel;
     public GameObject audioTarget;
     private AudioSource targetAudioSource;
     public AudioClip correctSound;
