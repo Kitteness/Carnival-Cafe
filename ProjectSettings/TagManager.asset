@@ -11,6 +11,8 @@ TagManager:
   - Hello Panel
   - an ice cream
   - Logic Manager
+  - croissants
+  - hotdogs
   layers:
   - Default
   - TransparentFX

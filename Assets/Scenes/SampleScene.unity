@@ -31421,7 +31421,7 @@ GameObject:
   - component: {fileID: 877442767585149927}
   m_Layer: 0
   m_Name: HotDog_Takeaway_Blue
-  m_TagString: Untagged
+  m_TagString: hotdogs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38993,7 +38993,7 @@ GameObject:
   - component: {fileID: 3591549923822006879}
   m_Layer: 0
   m_Name: Crossiant_Takeaway_Blue
-  m_TagString: Untagged
+  m_TagString: croissants
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
