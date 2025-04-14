@@ -64,7 +64,7 @@ public class CustomerManagement : MonoBehaviour
         if (customerNumber < customers.Length)
         {
             customers[customerNumber].SetActive(true);
-            orderText.text = "I'd like to order a " + tags[customerNumber] + ".";
+            orderText.text = "I'd like to order " + tags[customerNumber] + ".";
         }
     }
 }
