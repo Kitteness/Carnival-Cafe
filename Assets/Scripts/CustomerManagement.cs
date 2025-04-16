@@ -13,16 +13,25 @@ public class CustomerManagement : MonoBehaviour
     [SerializeField] private GameObject incorrectPanel;
     [SerializeField] private GameObject orderPanel;
     [SerializeField] private GameObject noItemPanel;
+    [SerializeField] private GameObject finalPanel;
     [SerializeField] private TextMeshProUGUI orderText;
+    [SerializeField] private TextMeshProUGUI finalText;
     public GameObject helloPanel;
     public GameObject audioTarget;
     private AudioSource targetAudioSource;
     public AudioClip correctSound;
     public AudioClip incorrectSound;
 
+    private float currentTime = 0;
+
     public void Start()
     {
         targetAudioSource = audioTarget.GetComponent<AudioSource>();
+    }
+
+    void FixedUpdate()
+    {
+        currentTime += Time.deltaTime;
     }
 
     public void socketCheck()
@@ -66,6 +75,11 @@ public class CustomerManagement : MonoBehaviour
         {
             customers[customerNumber].SetActive(true);
             orderText.text = "I'd like to order " + tags[customerNumber] + ".";
+        }
+        else
+        {
+            finalText.text = "You completed every customer's order in " + currentTime.ToString("0") + " seconds!";
+            finalPanel.SetActive(true);
         }
     }
 }
